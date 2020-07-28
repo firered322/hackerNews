@@ -1,16 +1,19 @@
 import React from "react";
 import "./App.css";
 import NewsList from "./components/newslist/NewsList";
+import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
+const About = () => <p>About</p>;
 
 function App() {
   return (
-    <div className="container">
-      <div className="navbar">
-        <h4>Hacker News</h4>
+    <Router>
+      <div className="container">
+        <Navbar />
+        <Route exact path="/" component={NewsList} />
       </div>
-        <NewsList />
-    </div>
+    </Router>
   );
 }
 
