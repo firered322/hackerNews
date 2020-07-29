@@ -4,8 +4,6 @@ import NewsList from "./components/newslist/NewsList";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-const About = () => <p>About</p>;
-
 function App() {
   return (
     <Router>

@@ -1,3 +1,13 @@
+.newsItem {
+    width: 50%;
+}
+
+@media only screen and (max-width: 960px) {
+    .newsItem {
+        width: 90%;
+    }
+}
+
 .title {
     font-size: 1.2rem;
 }
@@ -6,6 +16,26 @@
     font-size: 0.9rem;
 }
 
-.newsitem {
-    margin: 5px 10px
+.newsItem {
+    margin: 10px 20px
+}
+
+.articleHeader {
+    display: flex;
+    font-weight: 700;
+}
+.articleHeader a:link, a:visited {
+    color: black;
+}
+
+.articleId {
+    margin-right: 5px;
+}
+
+.artcleDetails {
+    font-size: 0.8rem;
+}
+
+.articleMeta {
+    margin: 0 5px 0 0;
 }

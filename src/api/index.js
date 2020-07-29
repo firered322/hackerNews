@@ -15,7 +15,7 @@ export const fetchTopStoryIds = async () => {
 export const findStory = async (storyId) => {
   try {
     const { data } = await axios.get(
-      API_ROOT + `item/${storyId}` + ".json?print=pretty"
+      API_ROOT + `item/${storyId}.json?print=pretty`
     );
     return data;
   } catch (error) {

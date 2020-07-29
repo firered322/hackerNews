@@ -16,9 +16,7 @@ class NewsList extends React.Component {
   }
 
   render() {
-    // const news = this.state.articles.map((item) => <p>{item}</p>);
-    // return this.state.articles ? news : "loading";
-    return this.state.storyIds.map((item) => <NewsItem story={item} />);
+    return this.state.storyIds.map((item, id) => <NewsItem key={item} story={item} id={id} />);
   }
 }
 
